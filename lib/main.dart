@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:jobsearch/Screens/DashBoard.dart';
 import 'package:jobsearch/Theme.dart';
 
+import 'Auth/SignUp.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: MyTheme.lightTheme,
       darkTheme: MyTheme.darkTheme,
-      home: DashBoard(),
+      home: SignUp(),
     );
   }
 }
