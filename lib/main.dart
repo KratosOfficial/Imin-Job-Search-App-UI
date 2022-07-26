@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:jobsearch/Auth/OnBoardingScreen.dart';
+import 'package:jobsearch/Auth/SplashScreen.dart';
 import 'package:jobsearch/Screens/DashBoard.dart';
 import 'package:jobsearch/Theme.dart';
 
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: MyTheme.lightTheme,
       darkTheme: MyTheme.darkTheme,
-      home: SignUp(),
+      home: SplashScreen(),
     );
   }
 }

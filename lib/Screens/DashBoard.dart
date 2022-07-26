@@ -7,6 +7,8 @@ import 'package:jobsearch/Screens/Fragments/JobsScreen.dart';
 import 'package:jobsearch/Theme.dart';
 import 'package:nb_utils/nb_utils.dart';
 
+import '../components/HomeDrawerComponent.dart';
+
 class DashBoard extends StatefulWidget {
   const DashBoard({Key? key}) : super(key: key);
 
@@ -56,7 +58,9 @@ class _DashBoardState extends State<DashBoard> {
           ),
         ],
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: HomeDrawerComponent(),
+      ),
       body: getFragment(),
       bottomNavigationBar: Container(
         padding: EdgeInsets.all(15),
